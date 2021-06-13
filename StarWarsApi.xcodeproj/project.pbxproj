@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04688A9426760DDF00D11B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688A9326760DDF00D11B9F /* AppDelegate.swift */; };
 		04688A9626760DDF00D11B9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688A9526760DDF00D11B9F /* SceneDelegate.swift */; };
-		04688A9826760DDF00D11B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688A9726760DDF00D11B9F /* ViewController.swift */; };
 		04688A9B26760DDF00D11B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04688A9926760DDF00D11B9F /* Main.storyboard */; };
 		04688A9D26760DE900D11B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04688A9C26760DE900D11B9F /* Assets.xcassets */; };
 		04688AA026760DE900D11B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04688A9E26760DE900D11B9F /* LaunchScreen.storyboard */; };
+		04688AAD26761AED00D11B9F /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688AAC26761AED00D11B9F /* Film.swift */; };
+		04688AB426761C4B00D11B9F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688AB326761C4B00D11B9F /* MainViewController.swift */; };
+		04688AB82676222C00D11B9F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04688AB72676222C00D11B9F /* Alamofire */; };
+		04688ABB2676588300D11B9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688ABA2676588300D11B9F /* DetailViewController.swift */; };
+		04688ABE26765EE400D11B9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04688ABD26765EE400D11B9F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04688A9026760DDF00D11B9F /* StarWarsApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04688A9326760DDF00D11B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04688A9526760DDF00D11B9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04688A9726760DDF00D11B9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04688A9A26760DDF00D11B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04688A9C26760DE900D11B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04688A9F26760DE900D11B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04688AA126760DE900D11B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04688AAC26761AED00D11B9F /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		04688AB326761C4B00D11B9F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04688ABA2676588300D11B9F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04688ABD26765EE400D11B9F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04688AB82676222C00D11B9F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,58 @@
 		04688A9226760DDF00D11B9F /* StarWarsApi */ = {
 			isa = PBXGroup;
 			children = (
-				04688A9326760DDF00D11B9F /* AppDelegate.swift */,
-				04688A9526760DDF00D11B9F /* SceneDelegate.swift */,
-				04688A9726760DDF00D11B9F /* ViewController.swift */,
-				04688A9926760DDF00D11B9F /* Main.storyboard */,
+				04688AAF26761AF700D11B9F /* Models */,
+				04688AA826760E6800D11B9F /* Supporting */,
+				04688AAA26760E8300D11B9F /* ViewControllers */,
+				04688AA926760E7A00D11B9F /* Storyboards */,
+				04688AC02676625700D11B9F /* Network */,
 				04688A9C26760DE900D11B9F /* Assets.xcassets */,
-				04688A9E26760DE900D11B9F /* LaunchScreen.storyboard */,
-				04688AA126760DE900D11B9F /* Info.plist */,
 			);
 			path = StarWarsApi;
+			sourceTree = "<group>";
+		};
+		04688AA826760E6800D11B9F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				04688A9326760DDF00D11B9F /* AppDelegate.swift */,
+				04688A9526760DDF00D11B9F /* SceneDelegate.swift */,
+				04688AA126760DE900D11B9F /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		04688AA926760E7A00D11B9F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04688A9926760DDF00D11B9F /* Main.storyboard */,
+				04688A9E26760DE900D11B9F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04688AAA26760E8300D11B9F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04688AB326761C4B00D11B9F /* MainViewController.swift */,
+				04688ABA2676588300D11B9F /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04688AAF26761AF700D11B9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04688AAC26761AED00D11B9F /* Film.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04688AC02676625700D11B9F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				04688ABD26765EE400D11B9F /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +134,9 @@
 			dependencies = (
 			);
 			name = StarWarsApi;
+			packageProductDependencies = (
+				04688AB72676222C00D11B9F /* Alamofire */,
+			);
 			productName = StarWarsApi;
 			productReference = 04688A9026760DDF00D11B9F /* StarWarsApi.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 04688A8726760DDF00D11B9F;
+			packageReferences = (
+				04688AB62676222C00D11B9F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 04688A9126760DDF00D11B9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04688A9826760DDF00D11B9F /* ViewController.swift in Sources */,
+				04688ABE26765EE400D11B9F /* NetworkManager.swift in Sources */,
+				04688AAD26761AED00D11B9F /* Film.swift in Sources */,
 				04688A9426760DDF00D11B9F /* AppDelegate.swift in Sources */,
+				04688ABB2676588300D11B9F /* DetailViewController.swift in Sources */,
 				04688A9626760DDF00D11B9F /* SceneDelegate.swift in Sources */,
+				04688AB426761C4B00D11B9F /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = StarWarsApi/Info.plist;
+				INFOPLIST_FILE = StarWarsApi/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = StarWarsApi/Info.plist;
+				INFOPLIST_FILE = StarWarsApi/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04688AB62676222C00D11B9F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04688AB72676222C00D11B9F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04688AB62676222C00D11B9F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04688A8826760DDF00D11B9F /* Project object */;
 }
